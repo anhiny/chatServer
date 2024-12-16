@@ -1,0 +1,5 @@
+/chatchatchat/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/chatchatchat/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+/chatchatchat/src/cmake-build-debug/server/CMakeFiles/rebuild_cache.dir
+/chatchatchat/src/cmake-build-debug/server/CMakeFiles/edit_cache.dir
+/chatchatchat/src/cmake-build-debug/server/CMakeFiles/ChatServer.dir

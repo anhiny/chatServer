@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/ChatServer.dir/chatserver.o CMakeFiles/ChatServer.dir/chatservice.o CMakeFiles/ChatServer.dir/main.o CMakeFiles/ChatServer.dir/db/db.o  -o ChatServer  -lmuduo_net -lmuduo_base -lmysqlclient -lpthread 

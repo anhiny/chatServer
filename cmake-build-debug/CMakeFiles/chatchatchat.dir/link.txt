@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/chatchatchat.dir/main.cpp.o  -o chatchatchat  -lmuduo_net -lmuduo_base -lpthread 

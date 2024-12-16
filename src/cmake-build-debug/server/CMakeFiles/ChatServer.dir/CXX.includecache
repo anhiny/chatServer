@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/chatchatchat/src/server/chatserver.cpp
+chatserver.h
+/chatchatchat/src/server/chatserver.h
+chatservice.h
+/chatchatchat/src/server/chatservice.h
+functional
+-
+string
+-
+json.hpp
+/chatchatchat/src/server/json.hpp
+
+/chatchatchat/src/server/chatservice.cpp
+chatservice.h
+/chatchatchat/src/server/chatservice.h
+public.h
+/chatchatchat/src/server/public.h
+muduo/base/Logging.h
+/chatchatchat/src/server/muduo/base/Logging.h
+
+/chatchatchat/src/server/db/db.cpp
+db.h
+/chatchatchat/src/server/db/db.h
+muduo/base/Logging.h
+-
+
+/chatchatchat/src/server/main.cpp
+chatserver.h
+/chatchatchat/src/server/chatserver.h
+iostream
+-
+
