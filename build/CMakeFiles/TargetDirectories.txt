@@ -1,0 +1,10 @@
+/home/u/chatServer/build/CMakeFiles/edit_cache.dir
+/home/u/chatServer/build/CMakeFiles/rebuild_cache.dir
+/home/u/chatServer/build/src/CMakeFiles/edit_cache.dir
+/home/u/chatServer/build/src/CMakeFiles/rebuild_cache.dir
+/home/u/chatServer/build/src/server/CMakeFiles/ChatServer.dir
+/home/u/chatServer/build/src/server/CMakeFiles/edit_cache.dir
+/home/u/chatServer/build/src/server/CMakeFiles/rebuild_cache.dir
+/home/u/chatServer/build/src/client/CMakeFiles/ChatClient.dir
+/home/u/chatServer/build/src/client/CMakeFiles/edit_cache.dir
+/home/u/chatServer/build/src/client/CMakeFiles/rebuild_cache.dir
