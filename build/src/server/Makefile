@@ -346,6 +346,30 @@ redis/redis.cpp.s:
 	cd /home/u/chatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/redis/redis.cpp.s
 .PHONY : redis/redis.cpp.s
 
+threadPool.o: threadPool.cpp.o
+.PHONY : threadPool.o
+
+# target to build an object file
+threadPool.cpp.o:
+	cd /home/u/chatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/threadPool.cpp.o
+.PHONY : threadPool.cpp.o
+
+threadPool.i: threadPool.cpp.i
+.PHONY : threadPool.i
+
+# target to preprocess a source file
+threadPool.cpp.i:
+	cd /home/u/chatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/threadPool.cpp.i
+.PHONY : threadPool.cpp.i
+
+threadPool.s: threadPool.cpp.s
+.PHONY : threadPool.s
+
+# target to generate assembly for a file
+threadPool.cpp.s:
+	cd /home/u/chatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/threadPool.cpp.s
+.PHONY : threadPool.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -382,6 +406,9 @@ help:
 	@echo "... redis/redis.o"
 	@echo "... redis/redis.i"
 	@echo "... redis/redis.s"
+	@echo "... threadPool.o"
+	@echo "... threadPool.i"
+	@echo "... threadPool.s"
 .PHONY : help
 
 

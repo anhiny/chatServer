@@ -1,5 +1,6 @@
 #pragma once
 
+#include <memory>
 #include <thread>
 #include <mutex>
 #include <vector>
@@ -25,7 +26,7 @@ private:
     void worker();
 
 private:
-    thread* m_manager;
+    unique_ptr<thread> m_manager;
     map<thread::id, thread> m_workers;
     vector<thread::id> m_ids;
     int m_minThreads;

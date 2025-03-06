@@ -136,4 +136,49 @@ src/server/CMakeFiles/ChatServer.dir/model/offlinemessagemodel.cpp.o: \
  /usr/include/mysql/client_plugin.h /usr/include/c++/9/stdlib.h \
  /usr/include/mysql/plugin_auth_common.h \
  /usr/include/mysql/mysql_version.h /usr/include/mysql/mysql_time.h \
- /usr/include/mysql/errmsg.h
+ /usr/include/mysql/errmsg.h /usr/include/muduo/base/Logging.h \
+ /usr/include/muduo/base/LogStream.h \
+ /usr/include/muduo/base/noncopyable.h \
+ /usr/include/muduo/base/StringPiece.h /usr/include/string.h \
+ /usr/include/strings.h /usr/include/muduo/base/Types.h \
+ /usr/include/assert.h /usr/include/muduo/base/Timestamp.h \
+ /usr/include/muduo/base/copyable.h /usr/include/boost/operators.hpp \
+ /usr/include/c++/9/cstddef /usr/include/c++/9/iterator \
+ /usr/include/c++/9/ostream /usr/include/c++/9/ios \
+ /usr/include/c++/9/bits/ios_base.h \
+ /usr/include/c++/9/bits/locale_classes.h \
+ /usr/include/c++/9/bits/locale_classes.tcc \
+ /usr/include/c++/9/system_error \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
+ /usr/include/c++/9/stdexcept /usr/include/c++/9/streambuf \
+ /usr/include/c++/9/bits/streambuf.tcc \
+ /usr/include/c++/9/bits/basic_ios.h \
+ /usr/include/c++/9/bits/locale_facets.h /usr/include/c++/9/cwctype \
+ /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h \
+ /usr/include/c++/9/bits/streambuf_iterator.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h \
+ /usr/include/c++/9/bits/locale_facets.tcc \
+ /usr/include/c++/9/bits/basic_ios.tcc \
+ /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
+ /usr/include/c++/9/bits/istream.tcc \
+ /usr/include/c++/9/bits/stream_iterator.h /usr/include/boost/config.hpp \
+ /usr/include/boost/config/user.hpp \
+ /usr/include/boost/config/detail/select_compiler_config.hpp \
+ /usr/include/boost/config/compiler/gcc.hpp \
+ /usr/include/boost/config/detail/select_stdlib_config.hpp \
+ /usr/include/boost/config/stdlib/libstdcpp3.hpp /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/boost/config/detail/select_platform_config.hpp \
+ /usr/include/boost/config/platform/linux.hpp \
+ /usr/include/boost/config/detail/posix_features.hpp \
+ /usr/include/boost/config/detail/suffix.hpp \
+ /usr/include/boost/config/helper_macros.hpp \
+ /usr/include/boost/detail/workaround.hpp \
+ /usr/include/boost/config/workaround.hpp \
+ /usr/include/boost/core/addressof.hpp

@@ -5,20 +5,27 @@
 #include <hiredis/hiredis.h>
 #include <thread>
 #include <functional>
+#include <iostream>
 
 using namespace std;
 
 class Redis {
 public:
-    Redis() : _publish_context(nullptr), _subscribe_context(nullptr) {};
+    Redis() : _publish_context(nullptr), _subscribe_context(nullptr) {
+        // 初始化回调函数为空函数，避免空指针调用
+        _notify_message_handler = [](int, string) {
+            cerr << "Warning: notify message handler called before initialization!" << endl;
+        };
+    };
 
     ~Redis() {
         if (_publish_context != nullptr) {
             redisFree(_publish_context);
         }
 
-        if (_subscribe_context != nullptr) {}
-        redisFree(_subscribe_context);
+        if (_subscribe_context != nullptr) {
+            redisFree(_subscribe_context);
+        }
     };
 
     // 连接redis服务器

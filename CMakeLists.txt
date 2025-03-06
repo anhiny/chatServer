@@ -19,5 +19,6 @@ include_directories(${PROJECT_SOURCE_DIR}/thirdparty)
 
 # 加载子目录
 add_subdirectory(src)
+add_subdirectory(test_for_threadPool)
 
 

@@ -142,6 +142,19 @@ ChatClient/fast:
 	$(MAKE) $(MAKESILENT) -f src/client/CMakeFiles/ChatClient.dir/build.make src/client/CMakeFiles/ChatClient.dir/build
 .PHONY : ChatClient/fast
 
+#=============================================================================
+# Target rules for targets named pressure_test
+
+# Build rule for target.
+pressure_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pressure_test
+.PHONY : pressure_test
+
+# fast build rule for target.
+pressure_test/fast:
+	$(MAKE) $(MAKESILENT) -f test_for_threadPool/CMakeFiles/pressure_test.dir/build.make test_for_threadPool/CMakeFiles/pressure_test.dir/build
+.PHONY : pressure_test/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -152,6 +165,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ChatClient"
 	@echo "... ChatServer"
+	@echo "... pressure_test"
 .PHONY : help
 
 

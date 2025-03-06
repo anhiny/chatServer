@@ -24,6 +24,7 @@ private:
 
     TcpServer _server; // 服务器
     EventLoop *_loop; // 指向时间循环对象的指针
+    
 };
 
 

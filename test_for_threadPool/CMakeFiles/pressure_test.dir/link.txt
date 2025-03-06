@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/pressure_test.dir/pressure_test.cpp.o -o ../bin/pressure_test  -lpthread

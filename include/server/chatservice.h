@@ -11,7 +11,7 @@
 #include "server/model/friendmodel.h"
 #include "server/model/groupmodel.h"
 #include "redis.h"
-
+#include "threadPool.h"
 
 using namespace std;
 using namespace muduo;
@@ -20,7 +20,7 @@ using namespace muduo::net;
 using json = nlohmann::json;
 
 // 处理消息的事件回调方法类型
-using MsgHandler = std::function<void(const TcpConnectionPtr &conn, json &js, Timestamp)>;
+using MsgHandler = std::function<void(const TcpConnectionPtr &conn, json &js, Timestamp time)>;
 
 // 聊天服务器业务类
 
@@ -86,6 +86,10 @@ private:
 
     // redis操作对象
     Redis _redis;
+
+    // 线程池成员
+    ThreadPool _threadPool;
+
 };
 
 

@@ -288,4 +288,9 @@ src/server/CMakeFiles/ChatServer.dir/chatserver.cpp.o: \
  /usr/local/include/hiredis/hiredis.h /usr/local/include/hiredis/read.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
  /usr/local/include/hiredis/sds.h /usr/local/include/hiredis/alloc.h \
- /usr/include/c++/9/thread
+ /usr/include/c++/9/thread /usr/include/c++/9/iostream \
+ /home/u/chatServer/include/threadPool.h /usr/include/c++/9/queue \
+ /usr/include/c++/9/deque /usr/include/c++/9/bits/stl_deque.h \
+ /usr/include/c++/9/bits/deque.tcc /usr/include/c++/9/bits/stl_queue.h \
+ /usr/include/c++/9/condition_variable /usr/include/c++/9/future \
+ /usr/include/c++/9/bits/atomic_futex.h

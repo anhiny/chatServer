@@ -74,12 +74,23 @@ void Redis::observer_channel_message() {
     redisReply *reply = nullptr;
     while (REDIS_OK == redisGetReply(this->_subscribe_context, (void **) &reply)) {
         // 订阅收到的消息是一个带三元组的数组
-        if (reply != nullptr && reply->element[2] != nullptr && reply->element[2]->str != nullptr) {
-            // 给业务层上报通道上发生的消息
-            _notify_message_handler(atoi(reply->element[1]->str), reply->element[2]->str);
+        if (reply != nullptr && reply->type == REDIS_REPLY_ARRAY && reply->elements >= 3) {
+            // 确保所有元素都存在且有效
+            if (reply->element[1] != nullptr && reply->element[1]->type == REDIS_REPLY_STRING && 
+                reply->element[2] != nullptr && reply->element[2]->type == REDIS_REPLY_STRING) {
+                // 确保回调函数已设置
+                if (_notify_message_handler) {
+                    // 给业务层上报通道上发生的消息
+                    _notify_message_handler(atoi(reply->element[1]->str), reply->element[2]->str);
+                } else {
+                    cerr << "Error: notify message handler not set!" << endl;
+                }
+            }
         }
 
-        freeReplyObject(reply);
+        if (reply != nullptr) {
+            freeReplyObject(reply);
+        }
     }
 
     cerr << ">>>>>>>>>>>>>>>>>>>>> observe_channel_message quit <<<<<<<<<<<<<<<<<<<<" << endl;

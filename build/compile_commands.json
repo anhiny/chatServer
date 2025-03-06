@@ -19,6 +19,12 @@
 },
 {
   "directory": "/home/u/chatServer/build/src/server",
+  "command": "/usr/bin/g++  -I/home/u/chatServer/include -I/home/u/chatServer/include/server -I/home/u/chatServer/include/server/db -I/home/u/chatServer/include/server/model -I/home/u/chatServer/include/server/redis -I/home/u/chatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/threadPool.cpp.o -c /home/u/chatServer/src/server/threadPool.cpp",
+  "file": "/home/u/chatServer/src/server/threadPool.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/threadPool.cpp.o"
+},
+{
+  "directory": "/home/u/chatServer/build/src/server",
   "command": "/usr/bin/g++  -I/home/u/chatServer/include -I/home/u/chatServer/include/server -I/home/u/chatServer/include/server/db -I/home/u/chatServer/include/server/model -I/home/u/chatServer/include/server/redis -I/home/u/chatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/db/db.cpp.o -c /home/u/chatServer/src/server/db/db.cpp",
   "file": "/home/u/chatServer/src/server/db/db.cpp",
   "output": "src/server/CMakeFiles/ChatServer.dir/db/db.cpp.o"

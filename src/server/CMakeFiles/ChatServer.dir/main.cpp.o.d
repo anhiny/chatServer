@@ -289,7 +289,12 @@ src/server/CMakeFiles/ChatServer.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/sys/time.h \
  /usr/local/include/hiredis/sds.h /usr/local/include/hiredis/alloc.h \
  /usr/include/c++/9/thread /usr/include/c++/9/iostream \
- /usr/include/signal.h /usr/include/x86_64-linux-gnu/bits/signum.h \
+ /home/u/chatServer/include/threadPool.h /usr/include/c++/9/queue \
+ /usr/include/c++/9/deque /usr/include/c++/9/bits/stl_deque.h \
+ /usr/include/c++/9/bits/deque.tcc /usr/include/c++/9/bits/stl_queue.h \
+ /usr/include/c++/9/condition_variable /usr/include/c++/9/future \
+ /usr/include/c++/9/bits/atomic_futex.h /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/signum.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \

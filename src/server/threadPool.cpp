@@ -2,6 +2,7 @@
 #include <chrono>
 #include <functional>
 #include <iostream>
+#include <memory>
 #include <mutex>
 #include <thread>
 #include <utility>
@@ -10,7 +11,7 @@ ThreadPool::ThreadPool(int min, int max) : m_maxThreads(max), m_minThreads(min),
     // m_idleThreads = m_curThreads = m_maxThreads / 2;
     m_idleThreads = m_curThreads = min;
     cout << "线程数量： " << m_curThreads << endl;
-    m_manager = new thread(&ThreadPool::manager, this);
+    m_manager = make_unique<thread>(&ThreadPool::manager, this);
     for (int i = 0; i < m_curThreads; ++i) {
         thread t(&ThreadPool::worker, this);
         m_workers.insert(make_pair(t.get_id(), move(t)));
@@ -30,8 +31,6 @@ ThreadPool::~ThreadPool() {
     if (m_manager->joinable()) {
         m_manager->join();
     }
-
-    delete m_manager;
 }
 
 void ThreadPool::addTask(function<void()> f) {

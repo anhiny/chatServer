@@ -225,6 +225,15 @@ chat_IS_TOP_LEVEL:STATIC=ON
 chat_SOURCE_DIR:STATIC=/home/u/chatServer
 
 //Value Computed by CMake
+chat_pressure_test_BINARY_DIR:STATIC=/home/u/chatServer/test_for_threadPool
+
+//Value Computed by CMake
+chat_pressure_test_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+chat_pressure_test_SOURCE_DIR:STATIC=/home/u/chatServer/test_for_threadPool
+
+//Value Computed by CMake
 src_BINARY_DIR:STATIC=/home/u/chatServer/src
 
 //Value Computed by CMake
@@ -340,7 +349,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

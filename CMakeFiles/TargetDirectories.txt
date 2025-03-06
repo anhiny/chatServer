@@ -8,3 +8,6 @@
 /home/u/chatServer/src/client/CMakeFiles/ChatClient.dir
 /home/u/chatServer/src/client/CMakeFiles/edit_cache.dir
 /home/u/chatServer/src/client/CMakeFiles/rebuild_cache.dir
+/home/u/chatServer/test_for_threadPool/CMakeFiles/pressure_test.dir
+/home/u/chatServer/test_for_threadPool/CMakeFiles/edit_cache.dir
+/home/u/chatServer/test_for_threadPool/CMakeFiles/rebuild_cache.dir
